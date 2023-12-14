@@ -23,4 +23,5 @@ urlpatterns = [
     path('receipts/', include('receipts.urls')),
     path('', RedirectView.as_view(url='/receipts/'), name='root_redirect'),
     path('home/', RedirectView.as_view(url='/receipts/'), name='home_redirect'),
+    path('accounts/', include('accounts.urls')),
 ]
